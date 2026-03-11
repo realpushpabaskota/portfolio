@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pushpa Baskota | Computer Engineering Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
@@ -19,10 +19,11 @@
         <div class="nav-content">
             <a href="#" class="logo">P<span>.</span></a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#hero"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a href="#skills"><i class="fa-solid fa-layer-group"></i> Skills</a></li>
+                <li><a href="#projects"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -30,43 +31,39 @@
     <!-- Hero Section -->
     <section id="hero">
         <div class="hero-content">
-            <h2 class="greeting">Hi, I'm</h2>
             <h1 class="name">Pushpa Baskota</h1>
-            <p class="tagline">Passionate about building innovative solutions using modern technology, blockchain, and
-                data science.</p>
+            <p class="greeting">Computer Engineering Student</p>
+            <p class="tagline">Passionate about building innovative solutions using modern technology, blockchain, and data science.</p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn primary-btn">View My Work</a>
                 <a href="#contact" class="btn secondary-btn">Contact Me</a>
             </div>
         </div>
-        <div class="hero-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-        </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="fade-in">
-        <div class="container glass-panel">
+        <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-grid">
                 <div class="about-text">
-                    <p>I am Pushpa Baskota, a driven and passionate <strong>Computer Engineering student</strong>. I thrive
-                        on solving complex problems through code and architecture.</p>
-                    <p>With a strong foundation in software development, I have actively pursued projects in emerging
-                        technologies like <strong>Blockchain</strong> and <strong>Healthcare Tech</strong>. I enjoy turning
-                        abstract concepts into practical, functioning systems that make a real-world impact.</p>
+                    <p>I am Pushpa Baskota, a driven and passionate <strong>Computer Engineering student</strong>. I thrive on solving complex problems through elegant code and robust scalable architecture.</p>
+                    <p>With a strong foundation in software development, I have actively pursued projects in emerging technologies like <strong>Blockchain</strong> and <strong>Healthcare Tech</strong>. I enjoy turning abstract concepts into practical, functioning systems that make a real-world impact and push technological boundaries.</p>
                 </div>
                 <div class="about-stats">
                     <div class="stat-item">
                         <i class="fa-solid fa-graduation-cap"></i>
-                        <h3>Education</h3>
-                        <p>B.E. Computer Engineering</p>
+                        <div>
+                            <h3>Education</h3>
+                            <p style="color: var(--text-light); margin-top: 2px; font-size: 0.9rem;">B.E. Computer Engineering</p>
+                        </div>
                     </div>
                     <div class="stat-item">
                         <i class="fa-solid fa-laptop-code"></i>
-                        <h3>Experience</h3>
-                        <p>Software Development & Project Architecture</p>
+                        <div>
+                            <h3>Experience</h3>
+                            <p style="color: var(--text-light); margin-top: 2px; font-size: 0.9rem;">Software Development & Architecture</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -76,35 +73,93 @@
     <!-- Skills Section -->
     <section id="skills" class="fade-in">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category glass-panel">
-                    <h3><i class="fa-solid fa-code"></i> Languages</h3>
-                    <div class="skill-tags">
-                        <span>Python</span>
-                        <span>C++</span>
-                        <span>JavaScript</span>
-                        <span>Solidity</span>
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="skills-list">
+
+                <!-- Skill 1 -->
+                <div class="skill-card-wide group">
+                    <div class="skill-logo">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <div class="skill-details">
+                        <h3>Python</h3>
+                        <p class="skill-subtitle">Programming & Machine Learning</p>
+                        <p class="skill-desc">My primary programming language for data science, machine learning models, and application development infrastructure. Efficient for rapid prototyping.</p>
                     </div>
                 </div>
-                <div class="skill-category glass-panel">
-                    <h3><i class="fa-brands fa-dev"></i> Web & Tech</h3>
-                    <div class="skill-tags">
-                        <span>HTML/CSS</span>
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>Blockchain</span>
-                        <span>Machine Learning</span>
+                
+                <!-- Skill C++ -->
+                <div class="skill-card-wide group">
+                    <div class="skill-logo">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="skill-details">
+                        <h3>C++</h3>
+                        <p class="skill-subtitle">Core Programming</p>
+                        <p class="skill-desc">Expertise in high-performance software development, foundational object-oriented programming, and complex, memory-efficient system architectures.</p>
                     </div>
                 </div>
-                <div class="skill-category glass-panel">
-                    <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools</h3>
-                    <div class="skill-tags">
-                        <span>Git & GitHub</span>
-                        <span>VS Code</span>
-                        <span>Database Design</span>
+                
+                <!-- Skill DSA -->
+                <div class="skill-card-wide group">
+                    <div class="skill-logo">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <div class="skill-details">
+                        <h3>Data Structure and Algorithm</h3>
+                        <p class="skill-subtitle">Problem Solving</p>
+                        <p class="skill-desc">Extensive knowledge of foundational data structures and algorithm design essential for writing optimized logic and highly scalable software solutions.</p>
                     </div>
                 </div>
+                
+                <!-- Skill Scikit-learn -->
+                <div class="skill-card-wide group">
+                    <div class="skill-logo">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <div class="skill-details">
+                        <h3>Scikit-Learn</h3>
+                        <p class="skill-subtitle">Machine Learning</p>
+                        <p class="skill-desc">Experienced in building dynamic machine learning workflows, rigorous predictive data modeling, and seamless automated data preprocessing.</p>
+                    </div>
+                </div>
+
+                <!-- Skill JS -->
+                <div class="skill-card-wide group">
+                    <div class="skill-logo">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <div class="skill-details">
+                        <h3>JavaScript / Web Tech</h3>
+                        <p class="skill-subtitle">Frontend & Backend Development</p>
+                        <p class="skill-desc">JavaScript powers the interactive experiences I build. I utilize modern libraries like React to build dynamic user interfaces, alongside essential web technologies.</p>
+                    </div>
+                </div>
+
+                <!-- Skill Solidity -->
+                <div class="skill-card-wide group">
+                    <div class="skill-logo">
+                        <i class="fa-brands fa-ethereum"></i>
+                    </div>
+                    <div class="skill-details">
+                        <h3>Solidity / Blockchain</h3>
+                        <p class="skill-subtitle">Smart Contract Development</p>
+                        <p class="skill-desc">I leverage Solidity to develop secure and efficient smart contracts for decentralized applications. Building decentralized voting infrastructures.</p>
+                    </div>
+                </div>
+                
+                <!-- Skill SQLite -->
+                <div class="skill-card-wide group">
+                    <div class="skill-logo">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <div class="skill-details">
+                        <h3>SQLite</h3>
+                        <p class="skill-subtitle">Relational Databases</p>
+                        <p class="skill-desc">Designing efficient, lightweight database architectures tailored for managing, storing, and seamlessly querying persistent application data.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -116,44 +171,36 @@
             <div class="projects-grid">
 
                 <!-- Project 1 -->
-                <div class="project-card glass-panel group">
-                    <div class="project-image">
-                        <img src="voting_system.png" alt="Voting System App" loading="lazy">
+                <div class="project-card group">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-link"></i>
                     </div>
-                    <div class="project-content">
-                        <div class="project-icon">
-                            <i class="fa-solid fa-link"></i>
-                        </div>
-                        <h3>Voting System Using Blockchain</h3>
-                        <p>A secure, decentralized e-voting infrastructure designed to prevent voter fraud and ensure
-                            transparency in elections.</p>
-                        <div class="tech-stack">
-                            <span>Solidity</span>
-                            <span>Ethereum</span>
-                            <span>React</span>
-                            <span>Web3.js</span>
-                        </div>
+                    <h3>Voting System Using Blockchain</h3>
+                    <p>A secure, decentralized e-voting infrastructure designed to prevent voter fraud and ensure absolute transparency in elections through cryptographic principles.</p>
+                        
+                    <span class="tech-used-label">Technologies Used:</span>
+                    <div class="tech-stack">
+                        <span>Solidity</span>
+                        <span>Ethereum</span>
+                        <span>React</span>
+                        <span>Web3.js</span>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-card glass-panel group">
-                    <div class="project-image">
-                        <img src="healthcare_ai.png" alt="Healthcare Analytics Dashboard" loading="lazy">
+                <div class="project-card group">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-heart-pulse"></i>
                     </div>
-                    <div class="project-content">
-                        <div class="project-icon">
-                            <i class="fa-solid fa-heart-pulse"></i>
-                        </div>
-                        <h3>Menstrual Irregularity Detection</h3>
-                        <p>An intelligent health diagnostic model to analyze user data and predict irregular menstrual
-                            patterns for early medical intervention.</p>
-                        <div class="tech-stack">
-                            <span>Python</span>
-                            <span>Machine Learning</span>
-                            <span>Data Pandas</span>
-                            <span>FastAPI</span>
-                        </div>
+                    <h3>Menstrual Irregularity Detection</h3>
+                    <p>An intelligent health diagnostic dashboard harnessing machine learning to analyze user health data and predict irregular menstrual patterns for early medical intervention.</p>
+                        
+                    <span class="tech-used-label">Technologies Used:</span>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>Pandas</span>
+                        <span>FastAPI</span>
                     </div>
                 </div>
 
@@ -163,36 +210,33 @@
 
     <!-- Contact Section -->
     <section id="contact" class="fade-in">
-        <div class="container glass-panel contact-panel">
+        <div class="container">
             <h2 class="section-title">Let's Connect</h2>
-            <p>I am currently open to new opportunities, collaborations, or just a chat about technology!</p>
+            <p class="contact-subtitle">I am currently open to new opportunities, collaborations, or just a chat about technology!</p>
 
-            <form id="contact-form">
-                <input type="text" name="user_name" placeholder="Your Name" required>
-                <input type="email" name="user_email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn primary-btn">Send</button>
-            </form>
-            <p id="status-message"></p>
-
-            <div class="contact-links">
-                <a href="mailto:baskotapushpa01@gmail.com" class="contact-btn">
-                    <i class="fa-solid fa-envelope"></i> baskotapushpa01@gmail.com
-                </a>
-                <a href="https://www.linkedin.com/in/pushpa-baskota-b488253a0" target="_blank" rel="noopener noreferrer"
-                    class="contact-btn">
-                    <i class="fa-brands fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://github.com/realpushpabaskota" target="_blank" rel="noopener noreferrer" class="contact-btn">
-                    <i class="fa-brands fa-github"></i> GitHub
-                </a>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fa-solid fa-envelope contact-icon" style="color: #EA4335;"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:baskotapushpa01@gmail.com">baskotapushpa01@gmail.com</a></p>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-brands fa-linkedin contact-icon" style="color: #0077B5;"></i>
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/pushpa-baskota-b488253a0/" target="_blank" rel="noopener noreferrer">Pushpa Baskota</a></p>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-brands fa-github contact-icon" style="color: #333;"></i>
+                    <h3>GitHub</h3>
+                    <p><a href="https://github.com/realpushpabaskota" target="_blank" rel="noopener noreferrer">@realpushpabaskota</a></p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Pushpa Baskota. Built with passion and code.</p>
+        <p>&copy; 2026 Pushpa Baskota. Engineered with passion.</p>
     </footer>
 
     <script src="script.js"></script>
